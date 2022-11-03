@@ -1,1 +1,73 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+:root {
+  font-size: 32px;
+  font-family: "League Spartan", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(222deg, 26%, 31%);
+}
+
+.calculator {
+  min-width: 400px;
+}
+.calculator__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculator__title {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.8rem;
+}
+.calculator__theme {
+  background-color: hsl(223deg, 31%, 20%);
+  width: 54px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 4px;
+}
+.calculator__theme button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: hsl(6deg, 63%, 50%);
+}
+.calculator__theme::before {
+  content: "THEME";
+  font-size: 0.3rem;
+  position: absolute;
+  left: -50px;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 1px;
+}
+.calculator__theme::after {
+  content: "1 2 3";
+  font-size: 0.3rem;
+  position: absolute;
+  top: -14px;
+  left: 8px;
+  color: hsl(0deg, 0%, 100%);
+  word-spacing: 11px;
+}/*# sourceMappingURL=style.css.map */
