@@ -1,0 +1,56 @@
+body {
+  background-color: hsl(268deg, 75%, 9%);
+}
+
+.calculator__title {
+  color: hsl(52deg, 100%, 62%);
+}
+.calculator__theme {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.calculator__theme button {
+  background-color: hsl(176deg, 100%, 44%);
+}
+.calculator__theme button:hover {
+  background-color: hsl(176deg, 61%, 66%);
+}
+.calculator__theme::before {
+  color: hsl(52deg, 100%, 62%);
+}
+.calculator__theme::after {
+  color: hsl(52deg, 100%, 62%);
+}
+.calculator__display {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.calculator__keys {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.calculator__keys button {
+  color: hsl(52deg, 100%, 62%);
+  background-color: hsl(268deg, 47%, 21%);
+  box-shadow: inset 0 -4px 0 0 hsl(290deg, 70%, 36%);
+}
+.calculator__keys button:hover {
+  background-color: hsl(268deg, 47%, 35%);
+}
+.calculator__keys button.key__text {
+  background-color: hsl(281deg, 89%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  box-shadow: inset 0 -4px 0 0 hsl(285deg, 91%, 52%);
+}
+.calculator__keys button.key__text:hover {
+  background-color: hsl(281deg, 63%, 47%);
+}
+.calculator__keys button#equals {
+  background-color: hsl(176deg, 100%, 44%);
+  color: hsl(198deg, 20%, 13%);
+  box-shadow: inset 0 -4px 0 0 hsl(177deg, 92%, 70%);
+}
+.calculator__keys button#equals:hover {
+  background-color: hsl(176deg, 61%, 66%);
+}
+
+.display__value {
+  color: hsl(52deg, 100%, 62%);
+}/*# sourceMappingURL=theme2.css.map */

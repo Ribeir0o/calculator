@@ -5,7 +5,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: hsl(222, 26%, 31%);
     padding: 40px;
 }
 
@@ -19,11 +18,9 @@ body{
     }
 
     &__title{
-        color: hsl(0, 0%, 100%);
         font-size: 0.8rem;
     }
     &__theme{
-        background-color: hsl(223, 31%, 20%);
         width: 54px;
         height: 20px;
         border-radius: 10px;
@@ -36,7 +33,8 @@ body{
             width: 13px;
             height: 13px;
             border-radius: 50%;
-            background-color: hsl(6, 63%, 50%);
+            position: absolute;
+            left: "9%";
         }
 
         &::before{
@@ -44,7 +42,6 @@ body{
             font-size: .3rem;
             position: absolute;
             left: -50px;
-            color: hsl(0, 0%, 100%);
             letter-spacing: 1px;
         }
 
@@ -54,7 +51,6 @@ body{
             position: absolute;
             top: -14px;
             left: 8px;
-            color: hsl(0, 0%, 100%);
             word-spacing: 11px;
         }
     }
@@ -63,7 +59,6 @@ body{
         width: 100%;
         height: 90px;
         border-radius: 7px;
-        background-color: hsl(224, 36%, 15%);
         padding-right: 20px;
 
         display: flex;
@@ -74,7 +69,6 @@ body{
     }
 
     &__keys{
-        background-color: hsl(223, 31%, 20%);
         padding: 24px 20px;
         height: 65vh;
         border-radius: 7px;
@@ -86,9 +80,6 @@ body{
 
         & button{
             border-radius: 7px;
-            color: hsl(222, 26%, 31%);
-            background-color: hsl(30, 25%, 89%);
-            box-shadow: inset 0 -4px 0 0 hsl(28, 16%, 65%);
             padding-top: 5px;
 
             &#reset , &#equals {
@@ -96,24 +87,15 @@ body{
             }
             
             &.key__text{
-                background-color: hsl(225, 21%, 49%);
                 font-size: .6rem;
-                color: hsl(0, 0%, 100%);
-                box-shadow: inset 0 -4px 0 0 hsl(224deg 28% 35%);
                 padding: 0;
             }
 
             &#equals{
-                background-color: hsl(6, 63%, 50%);
                 font-size: .6rem;
-                color: hsl(0, 0%, 100%);
-                box-shadow: inset 0 -4px 0 0 hsl(6, 70%, 34%);
                 padding: 0;
             }
         }
     }
 }
 
-.display__value{
-    color: hsl(0, 0%, 100%);
-}

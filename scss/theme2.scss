@@ -1,0 +1,90 @@
+$main-color: hsl(268, 75%, 9%);
+$secondary-color: hsl(268, 71%, 12%);
+$tertiary-color: hsl(268, 71%, 12%);
+
+$primary-key: hsl(281, 89%, 26%);
+$primary-keyHover: hsl(281, 63%, 47%);
+$primary-keyShadow: hsl(285, 91%, 52%);
+
+$secondary-key: hsl(176, 100%, 44%);
+$secondary-keyHover: hsl(176, 61%, 66%);
+$secondary-keyShadow: hsl(177, 92%, 70%);
+
+$tertiary-key: hsl(268, 47%, 21%);
+$tertiary-keyHover: hsl(268, 47%, 35%);
+$tertiary-keyShadow: hsl(290, 70%, 36%);
+
+$header-text: hsl(52, 100%, 62%);
+$mainKeys-text: hsl(52, 100%, 62%);
+$delReset-text: hsl(0, 0%, 100%);
+$equals-text: hsl(198, 20%, 13%);
+
+body {
+    background-color: $main-color;
+}
+
+.calculator {
+    &__title{
+        color: $header-text;
+    }
+    &__theme{
+
+        background-color: $secondary-color;
+    
+        button {
+            background-color: $secondary-key;
+            &:hover {
+                background-color: $secondary-keyHover;
+            }
+        }
+    
+        &::before{
+            color: $header-text;
+        }
+    
+        &::after{
+            color: $header-text;
+        }
+    }
+
+    &__display{
+        background-color: $tertiary-color;
+    }
+
+    &__keys {
+        background-color: $secondary-color;
+
+        & button {
+            
+            color: $mainKeys-text;
+            background-color: $tertiary-key;
+            box-shadow: inset 0 -4px 0 0 $tertiary-keyShadow;
+
+            &:hover {
+                background-color: $tertiary-keyHover;
+            }
+
+            &.key__text{
+                background-color: $primary-key;
+                color: $delReset-text;
+                box-shadow: inset 0 -4px 0 0 $primary-keyShadow;
+                &:hover{
+                    background-color: $primary-keyHover;
+                }
+            }
+
+            &#equals {
+                background-color: $secondary-key;
+                color: $equals-text;
+                box-shadow: inset 0 -4px 0 0 $secondary-keyShadow;
+                &:hover {
+                    background-color: $secondary-keyHover;
+                }
+            }
+        }
+    }
+}
+
+.display__value{
+    color: $header-text;
+}

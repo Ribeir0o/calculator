@@ -1,0 +1,90 @@
+$main-color: hsl(222, 26%, 31%);
+$secondary-color: hsl(223, 31%, 20%);
+$tertiary-color: hsl(224, 36%, 15%);
+
+$primary-key: hsl(225, 21%, 49%);
+$primary-keyHover: hsl(225, 72%, 79%);
+$primary-keyShadow: hsl(224, 28%, 35%);
+
+$secondary-key: hsl(6, 63%, 50%);
+$secondary-keyHover: hsl(7, 60%, 58%);
+$secondary-keyShadow: hsl(6, 70%, 34%);
+
+$tertiary-key: hsl(30, 25%, 89%);
+$tertiary-keyHover: hsl(32, 60%, 95%);
+$tertiary-keyShadow: hsl(28, 16%, 65%);
+
+$header-text: hsl(0, 0%, 100%);
+$mainKeys-text: hsl(221, 14%, 31%);
+$delReset-text: hsl(0, 0%, 100%);
+$equals-text: hsl(0, 0%, 100%);
+
+body {
+    background-color: $main-color;
+}
+
+.calculator {
+    &__title{
+        color: $header-text;
+    }
+    &__theme{
+
+        background-color: $secondary-color;
+    
+        button {
+            background-color: $secondary-key;
+            &:hover {
+                background-color: $secondary-keyHover;
+            }
+        }
+    
+        &::before{
+            color: $header-text;
+        }
+    
+        &::after{
+            color: $header-text;
+        }
+    }
+
+    &__display{
+        background-color: $tertiary-color;
+    }
+
+    &__keys {
+        background-color: $secondary-color;
+
+        & button {
+            
+            color: $mainKeys-text;
+            background-color: $tertiary-key;
+            box-shadow: inset 0 -4px 0 0 $tertiary-keyShadow;
+
+            &:hover {
+                background-color: $tertiary-keyHover;
+            }
+
+            &.key__text{
+                background-color: $primary-key;
+                color: $delReset-text;
+                box-shadow: inset 0 -4px 0 0 $primary-keyShadow;
+                &:hover{
+                    background-color: $primary-keyHover;
+                }
+            }
+
+            &#equals {
+                background-color: $secondary-key;
+                color: $equals-text;
+                box-shadow: inset 0 -4px 0 0 $secondary-keyShadow;
+                &:hover {
+                    background-color: $secondary-keyHover;
+                }
+            }
+        }
+    }
+}
+
+.display__value{
+    color: $header-text;
+}
