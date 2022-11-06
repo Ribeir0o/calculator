@@ -5,7 +5,14 @@ let positions  = ["9%", "40%", "70%"];
 let currentPosition = 0;
 
 themeSelector.parentElement.addEventListener("click", ()=>{
+    const prevPosition = currentPosition;
     currentPosition == 2 ? currentPosition = 0: currentPosition += 1;
     themeSelector.style.left = positions[currentPosition];
     theme.setAttribute("href", `css/theme${currentPosition}.css`);
+
+    animationKeyframe = [
+        {left: `${positions[prevPosition]}`},
+        {left: `${positions[currentPosition]}`}
+    ]
+    themeSelector.animate(animationKeyframe, 250)
 });

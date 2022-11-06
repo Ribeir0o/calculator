@@ -5,11 +5,16 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 40px;
+}
+
+*{
+    transition-property: background-color, color, box-shadow;
+    transition-duration: .25s;
 }
 
 .calculator{
-    min-width: 334px;
+    width: 90%;
+    max-width: 340px;
 
     &__header{
         display: flex;
@@ -56,7 +61,6 @@ body{
     }
 
     &__display{
-        width: 100%;
         height: 90px;
         border-radius: 7px;
         padding-right: 20px;
@@ -70,7 +74,7 @@ body{
 
     &__keys{
         padding: 24px 20px;
-        height: 65vh;
+        height: 340px;
         border-radius: 7px;
 
         display: grid;
