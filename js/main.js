@@ -26,8 +26,12 @@ function keyVerifier (key){
         key = key.replace('.', ',')
         if(key.match(/,/)){
             operation.slice(-1) == "," ? null : displayValue.textContent += key
+        }else if(key.match(0)){
+            operation.slice(0) == "0" ? 
+            operation.split(' ')[operation.split(' ').length - 1].match(/,/g) ?
+            displayValue.textContent+=key : null : displayValue.textContent +=key
         }else{
-            operation == '0'?  displayValue.textContent = key : displayValue.textContent +=key
+            operation == '0'? displayValue.textContent = key : displayValue.textContent +=key
         }
 
     }else if (key.match(/\/|\+|\*|-/)){
