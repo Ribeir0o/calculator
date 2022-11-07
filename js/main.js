@@ -35,7 +35,10 @@ function keyVerifier (key){
         operation.slice(-2, -1).match(/\/|\+|\*|-/) ? displayValue.textContent = operation.replace(operation.slice(-2, -1), key): 
         displayValue.textContent += ` ${key} `
     } else if (key == "Backspace") {
-        displayValue.textContent.length == 1 ? displayValue.textContent = 0 : displayValue.textContent = operation.slice(0,-1);
+        displayValue.textContent.length == 1 ? displayValue.textContent = 0 : 
+        operation.slice(-1) == ' ' ? 
+        displayValue.textContent = operation.slice(0, -3):
+        displayValue.textContent = operation.slice(0,-1);
     } else if (key == "Delete") {
         displayValue.textContent = 0;
     }else if (key == "Enter" || key == "="){
