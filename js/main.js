@@ -4,13 +4,17 @@ const displayValue = document.querySelector('.display__value');
 const keys = document.querySelectorAll('.calculator__keys button');
 
 const positions  = ["9%", "40%", "70%"];
-let currentPosition = 0;
+let favTheme = localStorage.getItem('favTheme');
+let currentPosition = favTheme ? +favTheme : 0;
+themeSelector.style.left = positions[currentPosition];
+theme.setAttribute("href", `css/theme${currentPosition}.css`);
 
 themeSelector.parentElement.addEventListener("click", ()=>{
     const prevPosition = currentPosition;
     currentPosition == positions.length-1 ? currentPosition = 0: currentPosition += 1;
     themeSelector.style.left = positions[currentPosition];
     theme.setAttribute("href", `css/theme${currentPosition}.css`);
+    localStorage.setItem("favTheme", currentPosition);
 
     animationKeyframe = [
         {left: `${positions[prevPosition]}`},
