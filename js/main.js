@@ -25,11 +25,13 @@ themeSelector.parentElement.addEventListener("click", ()=>{
 
 function keyVerifier (key){
     let operation = displayValue.textContent;
-
     if(key.match(/(^[0-9]|\.)/)){
-        key = key.replace('.', ',')
+        key = key.replace('.', ',');
+        let operationArray = operation.split(' ');
         if(key.match(/,/)){
-            operation.slice(-1).match(/,|\s/) ? null : displayValue.textContent += key
+            if(!operationArray[operationArray.length-1].match(/,|\s/)){
+                displayValue.textContent += key
+            } 
         }else if(key.match(0)){
             operation.slice(-1) == "0" ? 
             operation.split(' ')[operation.split(' ').length - 1].match(/,/g) ?
@@ -64,5 +66,5 @@ document.addEventListener("keyup", (e) =>{
 keys.forEach(key => {
     key.addEventListener("click", ()=>{
         keyVerifier(key.id);
-    })
+    });
 });
