@@ -70,6 +70,8 @@ body{
         justify-content: end;
 
         margin: 20px 0;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     &__keys{

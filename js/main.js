@@ -31,7 +31,7 @@ function keyVerifier (key){
         }
 
     }else if (key.match(/\/|\+|\*|-/)){
-        displayValue.textContent == 0 ? null: 
+        displayValue.textContent == 0 ? null:
         operation.slice(-2, -1).match(/\/|\+|\*|-/) ? displayValue.textContent = operation.replace(operation.slice(-2, -1), key): 
         displayValue.textContent += ` ${key} `
     } else if (key == "Backspace") {
@@ -42,6 +42,7 @@ function keyVerifier (key){
         operation = operation.replace(/,/g, '.');
         let result = Function(`return ${operation}`)();
         displayValue.textContent = result.toString().replace('.', ',');
+        result.toString().length >= 18 ? displayValue.style.fontSize = "0.8rem" : null
    } 
 }
 
