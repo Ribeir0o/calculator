@@ -31,11 +31,12 @@ const activeKeyBg = {
 
 function animateKey (key, typeKey) {
    const currentTheme = theme.getAttribute("href").match(/theme\d/)[0];
-   const button = document.getElementById(key)
-   const normalBg = button.style.backgroundColor
+   const button = document.getElementById(key) || document.getElementById("=");
+   const defaultBg = button.style.backgroundColor;
+
    button.style.backgroundColor = activeKeyBg[currentTheme][typeKey-1]
    setTimeout(() => {
-       button.style.backgroundColor = normalBg
+       button.style.backgroundColor = defaultBg
     }, 300);
 }
 
