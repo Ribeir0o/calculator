@@ -73,7 +73,7 @@ body {
                 }
             }
 
-            &#equals {
+            &.key_equal {
                 background-color: $secondary-key;
                 color: $equals-text;
                 box-shadow: inset 0 -4px 0 0 $secondary-keyShadow;

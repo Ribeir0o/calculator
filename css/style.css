@@ -10,6 +10,12 @@
 
 button {
   border: none;
+  cursor: pointer;
+}
+
+* {
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 0.25s;
 }
 
 body {
@@ -17,11 +23,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-}
-
-* {
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 0.25s;
 }
 
 .calculator {
@@ -89,14 +90,14 @@ body {
   border-radius: 7px;
   padding-top: 5px;
 }
-.calculator__keys button#reset, .calculator__keys button#equals {
+.calculator__keys button#Backspace, .calculator__keys button.key_equal {
   grid-column: span 2;
 }
 .calculator__keys button.key__text {
   font-size: 0.6rem;
   padding: 0;
 }
-.calculator__keys button#equals {
+.calculator__keys button.key_equal {
   font-size: 0.6rem;
   padding: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -42,12 +42,12 @@ body {
 .calculator__keys button.key__text:hover {
   background-color: hsl(281deg, 63%, 47%);
 }
-.calculator__keys button#equals {
+.calculator__keys button.key_equal {
   background-color: hsl(176deg, 100%, 44%);
   color: hsl(198deg, 20%, 13%);
   box-shadow: inset 0 -4px 0 0 hsl(177deg, 92%, 70%);
 }
-.calculator__keys button#equals:hover {
+.calculator__keys button.key_equal:hover {
   background-color: hsl(176deg, 61%, 66%);
 }
 

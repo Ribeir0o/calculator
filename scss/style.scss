@@ -1,5 +1,9 @@
 @import './abstract/base';
-
+*{
+    transition-property: background-color, color, box-shadow;
+    transition-duration: .25s;
+}
+    
 body{
     display: flex;
     justify-content: center;
@@ -7,10 +11,6 @@ body{
     min-height: 100vh;
 }
 
-*{
-    transition-property: background-color, color, box-shadow;
-    transition-duration: .25s;
-}
 
 .calculator{
     width: 90%;
@@ -86,7 +86,7 @@ body{
             border-radius: 7px;
             padding-top: 5px;
 
-            &#reset , &#equals {
+            &#Backspace , &.key_equal {
                 grid-column: span 2;
             }
             
@@ -95,7 +95,7 @@ body{
                 padding: 0;
             }
 
-            &#equals{
+            &.key_equal{
                 font-size: .6rem;
                 padding: 0;
             }
