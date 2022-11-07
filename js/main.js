@@ -37,7 +37,7 @@ function animateKey (key, typeKey) {
    button.style.backgroundColor = activeKeyBg[currentTheme][typeKey-1]
    setTimeout(() => {
        button.style.backgroundColor = defaultBg
-    }, 300);
+    }, 250);
 }
 
 function keyVerifier (key){
