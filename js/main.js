@@ -25,7 +25,7 @@ function keyVerifier (key){
     if(key.match(/(^[0-9]|\.)/)){
         key = key.replace('.', ',')
         if(key.match(/,/)){
-            operation.slice(-1) == "," ? null : displayValue.textContent += key
+            operation.slice(-1).match(/,|\s/) ? null : displayValue.textContent += key
         }else if(key.match(0)){
             operation.slice(-1) == "0" ? 
             operation.split(' ')[operation.split(' ').length - 1].match(/,/g) ?
