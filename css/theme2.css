@@ -12,7 +12,7 @@ body {
   background-color: hsl(176deg, 100%, 44%);
 }
 .calculator__theme button:hover {
-  background-color: hsl(176deg, 61%, 66%);
+  background-color: hsl(177deg, 100%, 79%);
 }
 .calculator__theme::before {
   color: hsl(52deg, 100%, 62%);
@@ -32,7 +32,7 @@ body {
   box-shadow: inset 0 -4px 0 0 hsl(290deg, 70%, 36%);
 }
 .calculator__keys button:hover {
-  background-color: hsl(268deg, 47%, 35%);
+  background-color: hsl(268deg, 54%, 44%);
 }
 .calculator__keys button.key__text {
   background-color: hsl(281deg, 89%, 26%);
@@ -40,7 +40,7 @@ body {
   box-shadow: inset 0 -4px 0 0 hsl(285deg, 91%, 52%);
 }
 .calculator__keys button.key__text:hover {
-  background-color: hsl(281deg, 63%, 47%);
+  background-color: hsl(280deg, 56%, 44%);
 }
 .calculator__keys button.key_equal {
   background-color: hsl(176deg, 100%, 44%);
@@ -48,7 +48,7 @@ body {
   box-shadow: inset 0 -4px 0 0 hsl(177deg, 92%, 70%);
 }
 .calculator__keys button.key_equal:hover {
-  background-color: hsl(176deg, 61%, 66%);
+  background-color: hsl(177deg, 100%, 79%);
 }
 
 .display__value {
