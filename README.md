@@ -1,7 +1,7 @@
 <h1 align="center"> Calculator </h1>
 <br>
 
-> <img src = "design/desktop_theme1.png" width="56%"> <img src = "design/themeSelectorFeature.gif" height = 340px>
+> <img src = "design/desktop_theme1.png" width="60%"> <img src = "design/themeSelectorFeature.gif" height = 340px>
 
 <br>
 
