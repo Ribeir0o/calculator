@@ -1,9 +1,9 @@
 <h1 align="center"> Calculator </h1>
 <br>
 
-<div align= center>
-    <img src = "design/themeSelectorFeature.gif" height = 340px>
-</div>
+> <img src = "design/desktop_theme1.png" width="56%"> <img src = "design/themeSelectorFeature.gif" height = 340px>
+
+<br>
 
 ## Links
 
