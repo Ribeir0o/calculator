@@ -9,7 +9,7 @@
 
 - Live Site URL: [Click Here](https://calculator-tan-phi.vercel.app/)
 
-## Build With
+## Built With
 
 - Scss
 - Semantic HTML5
